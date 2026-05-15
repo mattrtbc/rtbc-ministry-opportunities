@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youth Ministries</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="portalbasictheme.css" />
+  <link rel="stylesheet" href="theme-fellowship-hero-text-large.css" />
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #a7c3bb;
+      color: #2d2d2d;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .site-header {
+      background: #2f4d76;
+      color: #ffffff;
+      padding: 14px 20px 10px;
+    }
+
+    .site-header-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .site-title {
+      font-size: 24px;
+      line-height: 1.3;
+      margin: 0 0 14px;
+      font-weight: 500;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 15px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 4px 14px 6px 0;
+      margin-right: 14px;
+      border-right: 1px solid rgba(255,255,255,0.75);
+    }
+
+    .nav-links a:last-child { border-right: none; }
+
+    .hero {
+      min-height: 520px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.18)),
+        url('teens.jpg');
+      background-size: cover;
+      background-position: center 35%;
+      background-repeat: no-repeat;
+      padding: 62px 20px 0;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: "Brush Script MT", cursive;
+      font-size: clamp(56px, 7vw, 94px);
+      line-height: 1;
+      color: #ffffff;
+      text-shadow: 0 4px 14px rgba(0,0,0,0.72);
+      font-weight: 700;
+    }
+
+    .content {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 34px 18px 70px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 38px 24px;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .ministry-card {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.16);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .ministry-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ministry-card-body {
+      padding: 18px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .ministry-card h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      line-height: 1.15;
+      color: #2d2d2d;
+      font-weight: 700;
+    }
+
+    .ministry-card p {
+      margin: 0 0 18px;
+      font-size: 15px;
+      line-height: 1.45;
+      color: #333333;
+      flex: 1;
+    }
+
+    .needed {
+      display: block;
+      width: 100%;
+      background: #f5a400;
+      color: #2d2d2d;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 1.25;
+      padding: 12px 10px;
+      border-radius: 2px;
+      margin-top: auto;
+    }
+
+    .footer {
+      background: rgba(90, 138, 125, 0.42);
+      padding: 28px 20px;
+      color: #333333;
+      font-size: 15px;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 900px) {
+      .content { max-width: 650px; }
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero { min-height: 430px; }
+    }
+
+    @media (max-width: 620px) {
+      .site-title { font-size: 19px; }
+      .nav-links { font-size: 14px; }
+      .nav-links a {
+        margin-right: 8px;
+        padding-right: 8px;
+      }
+      .hero {
+        min-height: 320px;
+        padding-top: 42px;
+      }
+      .cards-grid { grid-template-columns: 1fr; }
+      .ministry-card img { height: 230px; }
+    }
+  </style>
+
+<style>
+.site-header{background:#2f4d76;color:#fff;padding:14px 20px 10px;font-family:Arial,Helvetica,sans-serif}
+.site-header *{box-sizing:border-box}
+.site-header-inner{max-width:1180px;margin:0 auto}
+.site-title{font-size:24px;line-height:1.3;margin:0 0 14px;font-weight:500;color:#fff}
+.nav-links{display:flex;flex-wrap:wrap;font-size:15px}
+.nav-links a{color:#fff;text-decoration:none;padding:4px 14px 6px 0;margin-right:14px;border-right:1px solid rgba(255,255,255,.75)}
+.nav-links a:last-child{border-right:none}
+.nav-links a:hover{text-decoration:underline}
+@media(max-width:620px){.site-title{font-size:19px}.nav-links{font-size:14px}.nav-links a{margin-right:8px;padding-right:8px}}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <h1 class="site-title">◉ Ripley Tabernacle Baptist Church Ministry Opportunities</h1>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="volunteer.html">Volunteer Today</a>
+      <a href="care.html">Care Ministries</a>
+      <a href="service.html">Church Service</a>
+      <a href="events.html">Events</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="fellowship.html">Fellowship</a>
+      <a href="music.html">Music Ministries</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="youth.html">Youth Ministry</a>
+    </nav>
+  </div>
+</header>
+
+
+  
+
+  <section class="hero">
+    <h1>Youth Ministries</h1>
+  </section>
+
+  <main class="content">
+    <section class="cards-grid">
+      <article class="ministry-card">
+        <img src="Nursery.jpg" alt="Nursery classroom" />
+        <div class="ministry-card-body">
+          <h2>Nurseries</h2>
+          <p>The Infant and Toddler Nurseries provide childcare and biblical teaching during services and special events.</p>
+          <span class="needed">Needed: Nursery Workers</span>
+        </div>
+      </article>
+
+      <article class="ministry-card">
+        <img src="teens2.jpg" alt="Children gathered for ministry" />
+        <div class="ministry-card-body">
+          <h2>Children's Ministry</h2>
+          <p>Sunday School, Junior Church, AWANA, and Creation Club are just a few of the Bible-focused areas for Preschool–6th grade children.</p>
+          <span class="needed">Needed: Preschool Helpers</span>
+        </div>
+      </article>
+
+      <article class="ministry-card">
+        <img src="teen gym glow night 1.jpg" alt="Youth group activity" />
+        <div class="ministry-card-body">
+          <h2>Youth Group</h2>
+          <p>Sunday School meets at 9:30am on Sundays. The Youth Group meets Wednesday at 7:00pm. Special activities occur year-round.</p>
+          <span class="needed">Needed: Host a Teen Activity</span>
+        </div>
+      </article>
+
+      <article class="ministry-card">
+        <img src="kids choir.jpg" alt="Kids choir program" />
+        <div class="ministry-card-body">
+          <h2>Kid's Choir</h2>
+          <p>The Kids' Choir practices during the Sunday Evening service and performs regularly throughout the year. The Kids' Choir is open to kids in grades K-6.</p>
+          <span class="needed">No adult volunteer needs at this time</span>
+        </div>
+      </article>
+
+      <article class="ministry-card">
+        <img src="awana.jpg" alt="Vacation Bible School logo" />
+        <div class="ministry-card-body">
+          <h2>Vacation Bible School</h2>
+          <p>Vacation Bible School is our largest children's outreach of the year. It takes many volunteers to help get the Gospel out to the children of our community.</p>
+          <span class="needed">Needed: Volunteer for 2026 VBS</span>
+        </div>
+      </article>
+
+      <article class="ministry-card">
+        <img src="20260501090802.jpg" alt="Church van and bus ministry" />
+        <div class="ministry-card-body">
+          <h2>Van &amp; Bus Ministry</h2>
+          <p>The Children's Bus Ministry brings children to RTBC on Sunday mornings and Wednesday evenings.</p>
+          <span class="needed">Needed: Substitute driver or start a new route</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">Copyright © 2026. All rights reserved.</div>
+  </footer>
+</body>
+</html>

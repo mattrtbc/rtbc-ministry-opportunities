@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer Today</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="portalbasictheme.css" />
+  <link rel="stylesheet" href="theme-fellowship-hero-text-large.css" />
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #a7c3bb;
+      color: #2d2d2d;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .site-header {
+      background: #2f4d76;
+      color: #ffffff;
+      padding: 14px 20px 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .site-header-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .site-title {
+      font-size: 24px;
+      line-height: 1.3;
+      margin: 0 0 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 15px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 4px 14px 6px 0;
+      margin-right: 14px;
+      border-right: 1px solid rgba(255,255,255,0.75);
+    }
+
+    .nav-links a:last-child {
+      border-right: none;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .volunteer-hero {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('Classroom-of-students-raising-their-hands-in-front-of-a-teacher.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding: 70px 20px;
+    }
+
+    .volunteer-hero h1 {
+      margin: 0 0 18px;
+      font-family: "Brush Script MT", cursive;
+      font-size: clamp(64px, 8vw, 118px);
+      line-height: 1;
+      color: #ffffff;
+      text-shadow: 0 4px 16px rgba(0,0,0,0.75);
+    }
+
+    .volunteer-hero p {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(22px, 2.5vw, 34px);
+      font-weight: 700;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.85);
+    }
+
+    .volunteer-page {
+      padding: 58px 18px 78px;
+    }
+
+    .volunteer-card {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+      padding: 46px 52px;
+      text-align: center;
+    }
+
+    .volunteer-card h2 {
+      margin: 0 0 18px;
+      font-size: clamp(34px, 4vw, 52px);
+      line-height: 1.15;
+      color: #2d2d2d;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .volunteer-card p {
+      margin: 0 auto 26px;
+      max-width: 680px;
+      font-size: 20px;
+      line-height: 1.7;
+      color: #444444;
+    }
+
+    .volunteer-form-button {
+      display: inline-block;
+      background: #f5a400;
+      color: #2d2d2d;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 15px 34px;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    }
+
+    .volunteer-form-button:hover {
+      filter: brightness(0.96);
+      text-decoration: none;
+    }
+
+    .footer {
+      background: rgba(90, 138, 125, 0.42);
+      padding: 28px 20px;
+      color: #333333;
+      font-size: 15px;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 620px) {
+      .site-title {
+        font-size: 19px;
+      }
+
+      .nav-links {
+        font-size: 14px;
+      }
+
+      .nav-links a {
+        margin-right: 8px;
+        padding-right: 8px;
+      }
+
+      .volunteer-hero {
+        min-height: 360px;
+        padding: 54px 18px;
+      }
+
+      .volunteer-card {
+        padding: 34px 24px;
+      }
+
+      .volunteer-card p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title">◉ Ripley Tabernacle Baptist Church Ministry Opportunities</h1>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="volunteer.html">Volunteer Today</a>
+        <a href="care.html">Care Ministries</a>
+        <a href="service.html">Church Service</a>
+        <a href="events.html">Events</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="fellowship.html">Fellowship</a>
+        <a href="music.html">Music Ministries</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="youth.html">Youth Ministry</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="volunteer-hero">
+    <div>
+      <h1>Volunteer Today!</h1>
+      <p>Click below and complete the form to let us know where you feel led to serve.</p>
+    </div>
+  </section>
+
+  <main class="volunteer-page">
+    <section class="volunteer-card">
+      <h2>Ready to Serve?</h2>
+      <p>
+        Use the volunteer form to tell us which ministries you are interested in helping with.
+        A ministry leader will follow up with you about next steps.
+      </p>
+      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xxTXd4-tlkGKi0uGX6qVGxXtVnDxfJlEvKaTUeqwkrxUM0w2MDI2SDZSWVVLSkhNUUFJVDJWU01ONS4u" rel="noopener noreferrer" target="_blank" class="volunteer-form-button">Volunteer Form</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">Copyright © 2026. All rights reserved.</div>
+  </footer>
+</body>
+</html>
