@@ -4195,3 +4195,18 @@ img[src*="College care packages 2.jpg"] {
     font-size: 1.35rem !important;
   }
 }
+.button1 {
+  display: inline-block;
+  background: #f5a400;
+  color: #2d2d2d !important;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none !important;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+.button1:hover {
+  filter: brightness(0.96);
+  text-decoration: none !important;
+}
