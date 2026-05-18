@@ -31,48 +31,61 @@
 </style>
 
 <style>
-/* iPhone / small-screen image and spacing fix */
+/* =========================================================
+   STRONG iPHONE IMAGE FIX
+   Keeps desktop/tablet layout, but forces smaller images on iPhone.
+   ========================================================= */
 @media only screen and (max-width: 430px) {
-  img[style*="max-height:340px"],
-  img[style*="max-height:360px"] {
-    height: 190px !important;
-    max-height: 190px !important;
+
+  /* Inline-styled ministry images used on most pages */
+  img[style*="min-height"],
+  img[style*="height:100%"],
+  img[style*="height: 100%"] {
+    height: 165px !important;
     min-height: 0 !important;
+    max-height: 165px !important;
     width: 100% !important;
     object-fit: cover !important;
     display: block !important;
   }
 
-  .ministry-card img {
-    height: 190px !important;
-    max-height: 190px !important;
-    object-fit: cover !important;
-  }
-
-  div[style*="display:flex"][style*="flex-wrap:wrap"][style*="align-items:stretch"] {
-    flex-direction: column !important;
-    margin-bottom: 24px !important;
-  }
-
-  div[style*="flex:1"][style*="min-width:300px"] {
-    min-width: 0 !important;
+  /* Card-grid pages such as Youth */
+  .ministry-card img,
+  .card img,
+  .cards-grid img {
+    height: 165px !important;
+    min-height: 0 !important;
+    max-height: 165px !important;
     width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* Stack image/text cards and remove the tall-column effect */
+  div[style*="display:flex"][style*="flex-wrap:wrap"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    margin-bottom: 22px !important;
+  }
+
+  div[style*="flex:1"][style*="min-width"] {
     flex: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
   }
 
-  div[style*="background:#ffffff"][style*="padding:40px"],
-  div[style*="background: #ffffff"][style*="padding: 40px"] {
-    padding: 24px 20px !important;
+  /* Tighten text blocks */
+  div[style*="background:#ffffff"],
+  div[style*="background: #ffffff"] {
+    padding: 22px 18px !important;
   }
 
-  div[style*="background:#ffffff"][style*="padding:40px"] h2,
-  div[style*="background: #ffffff"][style*="padding: 40px"] h2 {
+  h2 {
     font-size: 30px !important;
     line-height: 1.15 !important;
   }
 
-  div[style*="background:#ffffff"][style*="padding:40px"] p,
-  div[style*="background: #ffffff"][style*="padding: 40px"] p {
+  p {
     font-size: 17px !important;
     line-height: 1.55 !important;
   }
@@ -152,7 +165,7 @@
       <div style="flex:1; min-width:300px; background:#ffffff;">
         <img src="College care packages 2.jpg"
              alt="College and military care packages"
-             style="width:100%; height:clamp(190px, 42vw, 340px); max-height:340px; object-fit:cover; object-position:center center; display:block;" />
+             style="width:100%; height:clamp(165px, 42vw, 340px); max-height:340px; min-height:0; object-fit:cover; object-position:center center; display:block;" />
       </div>
 
       <div style="
@@ -265,7 +278,7 @@
       <div style="flex:1; min-width:300px; background:#ffffff;">
         <img src="Old-woman-at-beach-in-sunset.jpg"
              alt="Widows ministry care and encouragement"
-             style="width:100%; height:clamp(190px, 42vw, 340px); max-height:340px; object-fit:cover; object-position:center center; display:block;" />
+             style="width:100%; height:clamp(165px, 42vw, 340px); max-height:340px; min-height:0; object-fit:cover; object-position:center center; display:block;" />
       </div>
 
     </div>
@@ -286,7 +299,7 @@
       <div style="flex:1; min-width:300px; background:#ffffff;">
         <img src="Food-on-table.jpg"
              alt="Meal train ministry food on table"
-             style="width:100%; height:clamp(190px, 42vw, 340px); max-height:340px; object-fit:cover; object-position:center center; display:block;" />
+             style="width:100%; height:clamp(165px, 42vw, 340px); max-height:340px; min-height:0; object-fit:cover; object-position:center center; display:block;" />
       </div>
 
       <div style="

@@ -31,48 +31,61 @@
 </style>
 
 <style>
-/* iPhone / small-screen image and spacing fix */
+/* =========================================================
+   STRONG iPHONE IMAGE FIX
+   Keeps desktop/tablet layout, but forces smaller images on iPhone.
+   ========================================================= */
 @media only screen and (max-width: 430px) {
-  img[style*="max-height:340px"],
-  img[style*="max-height:360px"] {
-    height: 190px !important;
-    max-height: 190px !important;
+
+  /* Inline-styled ministry images used on most pages */
+  img[style*="min-height"],
+  img[style*="height:100%"],
+  img[style*="height: 100%"] {
+    height: 165px !important;
     min-height: 0 !important;
+    max-height: 165px !important;
     width: 100% !important;
     object-fit: cover !important;
     display: block !important;
   }
 
-  .ministry-card img {
-    height: 190px !important;
-    max-height: 190px !important;
-    object-fit: cover !important;
-  }
-
-  div[style*="display:flex"][style*="flex-wrap:wrap"][style*="align-items:stretch"] {
-    flex-direction: column !important;
-    margin-bottom: 24px !important;
-  }
-
-  div[style*="flex:1"][style*="min-width:300px"] {
-    min-width: 0 !important;
+  /* Card-grid pages such as Youth */
+  .ministry-card img,
+  .card img,
+  .cards-grid img {
+    height: 165px !important;
+    min-height: 0 !important;
+    max-height: 165px !important;
     width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* Stack image/text cards and remove the tall-column effect */
+  div[style*="display:flex"][style*="flex-wrap:wrap"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    margin-bottom: 22px !important;
+  }
+
+  div[style*="flex:1"][style*="min-width"] {
     flex: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
   }
 
-  div[style*="background:#ffffff"][style*="padding:40px"],
-  div[style*="background: #ffffff"][style*="padding: 40px"] {
-    padding: 24px 20px !important;
+  /* Tighten text blocks */
+  div[style*="background:#ffffff"],
+  div[style*="background: #ffffff"] {
+    padding: 22px 18px !important;
   }
 
-  div[style*="background:#ffffff"][style*="padding:40px"] h2,
-  div[style*="background: #ffffff"][style*="padding: 40px"] h2 {
+  h2 {
     font-size: 30px !important;
     line-height: 1.15 !important;
   }
 
-  div[style*="background:#ffffff"][style*="padding:40px"] p,
-  div[style*="background: #ffffff"][style*="padding: 40px"] p {
+  p {
     font-size: 17px !important;
     line-height: 1.55 !important;
   }
@@ -88,7 +101,7 @@
   <div class="container" style="max-width: 1200px; margin: 0 auto;">
     <!-- Maintenance -->
     <div style="display: flex; flex-wrap: wrap; align-items: stretch; margin-bottom: 40px; overflow: hidden; border-radius: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.10); background: #ffffff;">
-      <div style="flex: 1; min-width: 300px;"><img src="snow removal 1.jpg" alt="Maintenance" style="width:100%; height:clamp(190px, 42vw, 360px); max-height:360px; object-fit:cover; display:block;" /></div>
+      <div style="flex: 1; min-width: 300px;"><img src="snow removal 1.jpg" alt="Maintenance" style="width:100%; height:clamp(165px, 42vw, 360px); max-height:360px; min-height:0; object-fit:cover; display:block;" /></div>
       <div style="flex: 1; min-width: 300px; padding: 40px; background: #ffffff;">
         <h2 style="margin-top: 0; font-size: 42px; color: #2d2d2d;">Maintenance</h2>
         <p style="font-size: 20px; line-height: 1.7; color: #444444;">God has blessed RTBC with wonderful facilities. From cleaning to light repairs, there's always a way to serve by maintaining what the Lord has provided.</p>
@@ -102,7 +115,7 @@
         <p style="font-size: 20px; line-height: 1.7; color: #444444;">From small projects to complete remodels, you can serve by helping improve and maintain our facilities for future generations.</p>
         <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xxTXd4-tlkGKi0uGX6qVGxXtVnDxfJlEvKaTUeqwkrxUM0w2MDI2SDZSWVVLSkhNUUFJVDJWU01ONS4u" rel="noopener noreferrer" target="_blank" class="button1" style="display: inline-block; margin-top: 16px; padding: 12px 24px; border-radius: 999px; text-decoration: none; font-weight: 700;; background:#f5a400; color:#2d2d2d; box-shadow:0 4px 12px rgba(0,0,0,0.18); border:none;"> Sign Up for Future Projects </a>
       </div>
-      <div style="flex: 1; min-width: 300px;"><img src="office clean up pre 1.jpg" alt="Construction and remodeling" style="width:100%; height:clamp(190px, 42vw, 360px); max-height:360px; object-fit:cover; display:block;" /></div>
+      <div style="flex: 1; min-width: 300px;"><img src="office clean up pre 1.jpg" alt="Construction and remodeling" style="width:100%; height:clamp(165px, 42vw, 360px); max-height:360px; min-height:0; object-fit:cover; display:block;" /></div>
     </div>
   </div>
 </div>
