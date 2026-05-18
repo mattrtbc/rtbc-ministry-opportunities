@@ -104,7 +104,8 @@
 
     .ministry-card img {
       width: 100%;
-      height: 220px;
+      height: clamp(190px, 42vw, 220px);
+      max-height: 220px;
       object-fit: cover;
       display: block;
     }
@@ -177,9 +178,60 @@
         padding-top: 42px;
       }
       .cards-grid { grid-template-columns: 1fr; }
-      .ministry-card img { height: 230px; }
+      .ministry-card img { height: 190px;
+        max-height: 190px; }
     }
   </style>
+
+<style>
+/* iPhone / small-screen image and spacing fix */
+@media only screen and (max-width: 430px) {
+  img[style*="max-height:340px"],
+  img[style*="max-height:360px"] {
+    height: 190px !important;
+    max-height: 190px !important;
+    min-height: 0 !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .ministry-card img {
+    height: 190px !important;
+    max-height: 190px !important;
+    object-fit: cover !important;
+  }
+
+  div[style*="display:flex"][style*="flex-wrap:wrap"][style*="align-items:stretch"] {
+    flex-direction: column !important;
+    margin-bottom: 24px !important;
+  }
+
+  div[style*="flex:1"][style*="min-width:300px"] {
+    min-width: 0 !important;
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"],
+  div[style*="background: #ffffff"][style*="padding: 40px"] {
+    padding: 24px 20px !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"] h2,
+  div[style*="background: #ffffff"][style*="padding: 40px"] h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"] p,
+  div[style*="background: #ffffff"][style*="padding: 40px"] p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+}
+</style>
+
 
 <style>
 .site-header{background:#2f4d76;color:#fff;padding:14px 20px 10px;font-family:Arial,Helvetica,sans-serif}

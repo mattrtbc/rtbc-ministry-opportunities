@@ -30,6 +30,56 @@
 @media(max-width:620px){.site-title{font-size:19px}.nav-links{font-size:14px}.nav-links a{margin-right:8px;padding-right:8px}}
 </style>
 
+<style>
+/* iPhone / small-screen image and spacing fix */
+@media only screen and (max-width: 430px) {
+  img[style*="max-height:340px"],
+  img[style*="max-height:360px"] {
+    height: 190px !important;
+    max-height: 190px !important;
+    min-height: 0 !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .ministry-card img {
+    height: 190px !important;
+    max-height: 190px !important;
+    object-fit: cover !important;
+  }
+
+  div[style*="display:flex"][style*="flex-wrap:wrap"][style*="align-items:stretch"] {
+    flex-direction: column !important;
+    margin-bottom: 24px !important;
+  }
+
+  div[style*="flex:1"][style*="min-width:300px"] {
+    min-width: 0 !important;
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"],
+  div[style*="background: #ffffff"][style*="padding: 40px"] {
+    padding: 24px 20px !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"] h2,
+  div[style*="background: #ffffff"][style*="padding: 40px"] h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"] p,
+  div[style*="background: #ffffff"][style*="padding: 40px"] p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+}
+</style>
+
+
 <div data-component-theme="portalThemeColor8"
      class="row sectionBlockLayout"
      style="
@@ -102,14 +152,7 @@
       <div style="flex:1; min-width:300px; background:#ffffff;">
         <img src="College care packages 2.jpg"
              alt="College and military care packages"
-             style="
-               width:100%;
-               height:100%;
-               min-height:340px;
-               object-fit:cover;
-               object-position:center center;
-               display:block;
-             " />
+             style="width:100%; height:clamp(190px, 42vw, 340px); max-height:340px; object-fit:cover; object-position:center center; display:block;" />
       </div>
 
       <div style="
@@ -222,14 +265,7 @@
       <div style="flex:1; min-width:300px; background:#ffffff;">
         <img src="Old-woman-at-beach-in-sunset.jpg"
              alt="Widows ministry care and encouragement"
-             style="
-               width:100%;
-               height:100%;
-               min-height:340px;
-               object-fit:cover;
-               object-position:center center;
-               display:block;
-             " />
+             style="width:100%; height:clamp(190px, 42vw, 340px); max-height:340px; object-fit:cover; object-position:center center; display:block;" />
       </div>
 
     </div>
@@ -250,14 +286,7 @@
       <div style="flex:1; min-width:300px; background:#ffffff;">
         <img src="Food-on-table.jpg"
              alt="Meal train ministry food on table"
-             style="
-               width:100%;
-               height:100%;
-               min-height:340px;
-               object-fit:cover;
-               object-position:center center;
-               display:block;
-             " />
+             style="width:100%; height:clamp(190px, 42vw, 340px); max-height:340px; object-fit:cover; object-position:center center; display:block;" />
       </div>
 
       <div style="

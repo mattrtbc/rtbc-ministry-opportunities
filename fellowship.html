@@ -30,6 +30,56 @@
 @media(max-width:620px){.site-title{font-size:19px}.nav-links{font-size:14px}.nav-links a{margin-right:8px;padding-right:8px}}
 </style>
 
+<style>
+/* iPhone / small-screen image and spacing fix */
+@media only screen and (max-width: 430px) {
+  img[style*="max-height:340px"],
+  img[style*="max-height:360px"] {
+    height: 190px !important;
+    max-height: 190px !important;
+    min-height: 0 !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .ministry-card img {
+    height: 190px !important;
+    max-height: 190px !important;
+    object-fit: cover !important;
+  }
+
+  div[style*="display:flex"][style*="flex-wrap:wrap"][style*="align-items:stretch"] {
+    flex-direction: column !important;
+    margin-bottom: 24px !important;
+  }
+
+  div[style*="flex:1"][style*="min-width:300px"] {
+    min-width: 0 !important;
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"],
+  div[style*="background: #ffffff"][style*="padding: 40px"] {
+    padding: 24px 20px !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"] h2,
+  div[style*="background: #ffffff"][style*="padding: 40px"] h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  div[style*="background:#ffffff"][style*="padding:40px"] p,
+  div[style*="background: #ffffff"][style*="padding: 40px"] p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+}
+</style>
+
+
 <div data-component-theme="portalThemeColor8" class="row sectionBlockLayout" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; min-height:520px; padding:0; margin:0; color:#ffffff; overflow:hidden; background-image:linear-gradient(rgba(0,0,0,0.46), rgba(0,0,0,0.46)), url('family conf 6.jpg'); background-size:cover; background-position:center center; background-repeat:no-repeat;">
   <div class="container" style="width:100%; max-width:1200px; margin:0 auto; padding:80px 20px;">
     <div style="max-width:920px; margin:0 auto; text-align:center; color:#ffffff;">
@@ -44,7 +94,7 @@
   <div class="container" style="max-width:1200px; margin:0 auto; padding:0;">
     <div style="display:flex; flex-wrap:wrap; align-items:stretch; margin:0 auto 20px; overflow:hidden; border-radius:18px; box-shadow:0 6px 20px rgba(0,0,0,0.10); background:#ffffff; max-width:1100px;">
       <div style="flex:1; min-width:300px; background:#ffffff;">
-        <img src="HH 10.JPG" alt="Helping Hands" style="width:100%; height:100%; min-height:360px; object-fit:cover; object-position:center center; display:block;" />
+        <img src="HH 10.JPG" alt="Helping Hands" style="width:100%; height:clamp(190px, 42vw, 360px); max-height:360px; object-fit:cover; object-position:center center; display:block;" />
       </div>
       <div style="flex:1; min-width:300px; background:#ffffff; padding:42px 44px; display:flex; flex-direction:column; justify-content:center;">
         <h2 style="margin:0 0 16px; font-size:42px; line-height:1.15; color:#2d2d2d;">Helping Hands</h2>
@@ -59,12 +109,12 @@
         <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xxTXd4-tlkGKi0uGX6qVGxXtVnDxfJlEvKaTUeqwkrxUM0w2MDI2SDZSWVVLSkhNUUFJVDJWU01ONS4u" rel="noopener noreferrer" target="_blank" class="button1" style="display:inline-block; align-self:flex-start; margin-top:4px; padding:12px 24px; border-radius:999px; text-decoration:none; font-weight:700;; background:#f5a400; color:#2d2d2d; box-shadow:0 4px 12px rgba(0,0,0,0.18); border:none;">Join Us!</a>
       </div>
       <div style="flex:1; min-width:300px; background:#ffffff;">
-        <img src="Old-woman-at-beach-in-sunset.jpg" alt="Sonshine Seniors" style="width:100%; height:100%; min-height:360px; object-fit:cover; object-position:center center; display:block;" />
+        <img src="Old-woman-at-beach-in-sunset.jpg" alt="Sonshine Seniors" style="width:100%; height:clamp(190px, 42vw, 360px); max-height:360px; object-fit:cover; object-position:center center; display:block;" />
       </div>
     </div>
     <div style="display:flex; flex-wrap:wrap; align-items:stretch; margin:0 auto 24px; overflow:hidden; border-radius:18px; box-shadow:0 6px 20px rgba(0,0,0,0.10); background:#ffffff; max-width:1100px;">
       <div style="flex:1; min-width:300px; background:#ffffff;">
-        <img src="Food-on-table.jpg" alt="Ladies Circle" style="width:100%; height:100%; min-height:360px; object-fit:cover; object-position:center center; display:block;" />
+        <img src="Food-on-table.jpg" alt="Ladies Circle" style="width:100%; height:clamp(190px, 42vw, 360px); max-height:360px; object-fit:cover; object-position:center center; display:block;" />
       </div>
       <div style="flex:1; min-width:300px; background:#ffffff; padding:42px 44px; display:flex; flex-direction:column; justify-content:center;">
         <h2 style="margin:0 0 16px; font-size:42px; line-height:1.15; color:#2d2d2d;">Ladies Circle</h2>
@@ -79,7 +129,7 @@
         <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xxTXd4-tlkGKi0uGX6qVGxXtVnDxfJlEvKaTUeqwkrxUM0w2MDI2SDZSWVVLSkhNUUFJVDJWU01ONS4u" rel="noopener noreferrer" target="_blank" class="button1" style="display:inline-block; align-self:flex-start; margin-top:4px; padding:12px 24px; border-radius:999px; text-decoration:none; font-weight:700;; background:#f5a400; color:#2d2d2d; box-shadow:0 4px 12px rgba(0,0,0,0.18); border:none;">No signup needed!</a>
       </div>
       <div style="flex:1; min-width:300px; background:#ffffff;">
-        <img src="Basketball-on-the-hardwood-of-an-indoor-court.jpg" alt="Men's Basketball" style="width:100%; height:100%; min-height:360px; object-fit:cover; object-position:center center; display:block;" />
+        <img src="Basketball-on-the-hardwood-of-an-indoor-court.jpg" alt="Men's Basketball" style="width:100%; height:clamp(190px, 42vw, 360px); max-height:360px; object-fit:cover; object-position:center center; display:block;" />
       </div>
     </div>
   </div>
