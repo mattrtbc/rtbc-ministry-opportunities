@@ -279,6 +279,116 @@
 @media(max-width:620px){.site-title{font-size:19px}.nav-links{font-size:14px}.nav-links a{margin-right:8px;padding-right:8px}}
 </style>
 
+
+<style>
+/* Youth correction: make cards match the other ministry pages. */
+.content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 50px 18px 70px !important;
+}
+.cards-grid {
+  display: block !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+.ministry-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  margin: 0 0 40px !important;
+  overflow: hidden !important;
+  border-radius: 18px !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.10) !important;
+  background: #ffffff !important;
+  min-height: 0 !important;
+}
+.ministry-card:nth-child(even) {
+  flex-direction: row-reverse !important;
+}
+.ministry-card img {
+  flex: 1 1 50% !important;
+  width: 50% !important;
+  height: clamp(220px, 32vw, 360px) !important;
+  max-height: 360px !important;
+  min-height: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+}
+.ministry-card-body {
+  flex: 1 1 50% !important;
+  padding: 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  background: #ffffff !important;
+}
+.ministry-card h2 {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  font-size: 42px !important;
+  line-height: 1.1 !important;
+  color: #2d2d2d !important;
+}
+.ministry-card p {
+  margin: 0 0 20px !important;
+  font-size: 20px !important;
+  line-height: 1.7 !important;
+  color: #444444 !important;
+  flex: 0 0 auto !important;
+}
+.needed,
+.ministry-card a.needed,
+.ministry-card span.needed {
+  display: inline-block !important;
+  align-self: flex-start !important;
+  width: auto !important;
+  margin-top: 8px !important;
+  padding: 12px 24px !important;
+  border-radius: 999px !important;
+  background: #f5a400 !important;
+  color: #2d2d2d !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+@media only screen and (max-width: 700px) {
+  .content {
+    padding: 34px 18px 50px !important;
+  }
+  .ministry-card,
+  .ministry-card:nth-child(even) {
+    flex-direction: column !important;
+    margin-bottom: 26px !important;
+  }
+  .ministry-card img {
+    width: 100% !important;
+    flex: none !important;
+    height: 190px !important;
+    max-height: 190px !important;
+  }
+  .ministry-card-body {
+    padding: 24px 20px !important;
+  }
+  .ministry-card h2 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+  .ministry-card p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+  .needed,
+  .ministry-card a.needed,
+  .ministry-card span.needed {
+    width: 100% !important;
+    align-self: stretch !important;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -319,7 +429,7 @@
       </article>
 
       <article class="ministry-card">
-        <img src="awana cropped.jpg" alt="Children gathered for ministry" />
+        <img src="teens2.jpg" alt="Children gathered for ministry" />
         <div class="ministry-card-body">
           <h2>Children's Ministry</h2>
           <p>Sunday School, Junior Church, AWANA, and Creation Club are just a few of the Bible-focused areas for Preschool–6th grade children.</p>

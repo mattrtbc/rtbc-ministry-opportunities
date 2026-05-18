@@ -205,8 +205,8 @@
       </div>
 
       <div class="opportunity-item">
-        <h3>Preschool Class Helper</h3>
-        <p>Assist our growing Preschool Class!</p>
+        <h3>Ushers</h3>
+        <p>Assist with seating, offering, and helping services run smoothly.</p>
         <a href="volunteer.html" class="opportunity-button">Volunteer Today</a>
       </div>
     </div>
@@ -215,7 +215,7 @@
 
 <style>
 .current-opportunities {
-  background: #f6f1e7;
+  background: #a7c3bb;
   padding: 48px 18px;
   margin: 0;
 }
@@ -418,7 +418,7 @@
         </div>
 
         <div style="flex:1; min-width:300px;">
-          <img src="HH 5.JPG" alt="Fellowship" style="width:100%; height:clamp(190px, 42vw, 360px); max-height:360px; object-fit:cover; display:block;" />
+          <img src="HH 5.JPG" alt="Fellowship" style="width:100%; height:clamp(220px, 42vw, 360px); max-height:360px; min-height:0; object-fit:contain; object-position:center center; background:#ffffff; display:block;" />
         </div>
         
     </div>
@@ -513,3 +513,19 @@
     
   </div>
 </div>
+<style>
+/* Index corrections: match section color and show more of Fellowship photo. */
+.current-opportunities { background: #a7c3bb !important; }
+img[src="HH 5.JPG"] {
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #ffffff !important;
+}
+@media only screen and (max-width: 430px) {
+  img[src="HH 5.JPG"] {
+    height: 190px !important;
+    max-height: 190px !important;
+    object-fit: contain !important;
+  }
+}
+</style>
