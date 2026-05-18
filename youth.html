@@ -184,6 +184,27 @@
   </style>
 
 <style>
+/* Youth page mobile hero fix:
+   Uses contain on small screens so the full group/faces are visible instead of cropped off the sides. */
+@media only screen and (max-width: 430px) {
+  .hero {
+    min-height: 300px !important;
+    background-size: contain !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-color: #2f4d76 !important;
+    padding-top: 32px !important;
+  }
+
+  .hero h1 {
+    font-size: 52px !important;
+    line-height: 1 !important;
+  }
+}
+</style>
+
+
+<style>
 /* =========================================================
    STRONG iPHONE IMAGE FIX
    Keeps desktop/tablet layout, but forces smaller images on iPhone.
