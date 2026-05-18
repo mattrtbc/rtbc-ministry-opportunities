@@ -31,6 +31,21 @@
 </style>
 
 <style>
+/* Care page first image adjustment:
+   Uses contain so the girl's face and what she is holding stay visible. */
+@media only screen and (max-width: 430px) {
+  img[src="College care packages 2.jpg"] {
+    height: 220px !important;
+    max-height: 220px !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    background: #ffffff !important;
+  }
+}
+</style>
+
+
+<style>
 /* =========================================================
    STRONG iPHONE IMAGE FIX
    Keeps desktop/tablet layout, but forces smaller images on iPhone.
@@ -165,7 +180,7 @@
       <div style="flex:1; min-width:300px; background:#ffffff;">
         <img src="College care packages 2.jpg"
              alt="College and military care packages"
-             style="width:100%; height:clamp(165px, 42vw, 340px); max-height:340px; min-height:0; object-fit:cover; object-position:center center; display:block;" />
+             style="width:100%; height:clamp(220px, 42vw, 340px); max-height:340px; min-height:0; object-fit:contain; object-position:center center; background:#ffffff; display:block;" />
       </div>
 
       <div style="
