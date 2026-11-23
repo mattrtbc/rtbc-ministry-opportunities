@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2027 Junior Church volunteer schedule and weekly lesson curriculum for Ripley Tabernacle Baptist Church." />
+  <title>Junior Church 2027 | RTBC Ministry Opportunities</title>
+  <link rel="stylesheet" href="junior-church.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="index.html">◉ Ripley Tabernacle Baptist Church Ministry Opportunities</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="volunteer.html">Volunteer Today</a>
+        <a href="junior-church.html" aria-current="page">Junior Church 2027</a>
+        <a href="care.html">Care Ministries</a>
+        <a href="service.html">Church Service</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="fellowship.html">Fellowship</a>
+        <a href="music.html">Music Ministries</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="events.html">Special Events</a>
+        <a href="youth.html">Youth Ministry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Volunteer resource hub</p>
+        <h1 id="page-title">Junior Church 2027</h1>
+        <p class="hero-copy">Find your scheduled Sunday, team assignments, and the lesson curriculum in one place.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#schedule">View the schedule</a>
+          <button class="button button-secondary" id="copy-link" type="button">Copy page link</button>
+        </div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="next-section" aria-labelledby="next-heading">
+      <div class="page-width">
+        <p class="section-kicker">Coming up</p>
+        <h2 id="next-heading">Next Junior Church Sunday</h2>
+        <div id="next-service" class="next-card" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="schedule-section" id="schedule" aria-labelledby="schedule-heading">
+      <div class="page-width">
+        <div class="section-heading-row">
+          <div>
+            <p class="section-kicker">Master schedule</p>
+            <h2 id="schedule-heading">2027 Sunday Schedule</h2>
+          </div>
+          <p class="schedule-note">Fifth Sundays are marked as no Junior Church. Their curriculum remains available for reference.</p>
+        </div>
+
+        <div class="filters" aria-label="Schedule filters">
+          <label>
+            <span>Search by volunteer or lesson</span>
+            <input id="schedule-search" type="search" placeholder="Try a name or lesson title" autocomplete="off" />
+          </label>
+          <label>
+            <span>Month</span>
+            <select id="month-filter">
+              <option value="all">All months</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="results-summary" id="results-summary" aria-live="polite"></p>
+        <div class="schedule-grid" id="schedule-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <h3>No matching Sundays</h3>
+          <p>Clear the search or choose another month.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="help-section">
+      <div class="page-width help-grid">
+        <div>
+          <p class="section-kicker">Using this page</p>
+          <h2>Keep the team ready</h2>
+        </div>
+        <div class="help-items">
+          <p><strong>Open the curriculum:</strong> Choose “View lesson PDF” on your assigned Sunday.</p>
+          <p><strong>Share the hub:</strong> Send this page’s address to teachers and helpers so everyone has the current schedule.</p>
+          <p><strong>Schedule questions:</strong> Contact Pastor Matt before your assigned Sunday if a change is needed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="page-width">Ripley Tabernacle Baptist Church · Junior Church Volunteer Resources</div>
+  </footer>
+
+  <script src="junior-church.js"></script>
+</body>
+</html>
